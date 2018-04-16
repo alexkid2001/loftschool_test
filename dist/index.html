@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>LoftSchool Test</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="header clearfix">
+		<div class="container">
+			<div class="logo_wrap">
+				<img src="img/logo.png" alt="LOGO">
+			</div>
+			<div class="search_wrap">
+				<form action="" class="search">
+					<input type="search" value="" id="search" class="search_input">
+					<input type="submit" value="Поиск" class="search_submit">
+				</form>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</header>
+	<!-- Custom HTML -->
+
+	<nav class="main_nav">
+		<div class="container">
+			<ul class="nav_list">
+				<li class="nav_item"><a href="#">Каталог продукции</a> </li>
+				<li class="nav_item"><a href="#">Все бренды</a></li>
+				<li class="nav_item"><a href="#">Подарки на 14 февраля</a></li>
+				<li class="nav_item"><a href="#">Подарки на 23 февраля</a></li>
+				<li class="nav_item"><a href="#">Подарки на 8 марта</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="main_content">
+		<div class="container">
+			<div class="breadcrumbs_wrap">
+				<ul class="brdcr_list">
+					<li class="brdcr_item"><a href="#">Главная</a></li>
+					<li class="brdcr_item current_page"><a href="#">Корзина</a></li>
+				</ul>
+			</div>
+			<div class="title_page">
+				<h1 class="h1_title">Корзина</h1>
+			</div>	
+			<div class="order_wrap">
+				<table>
+					<tr>
+						<th colspan="4">
+							<span class="total_select">Выделено: 
+								<span class="select_cnt"><b>0</b>
+							</span>
+							</span>
+							<span class="dlt_btn">
+								Удалить отмеченые
+							</span>
+						</th>			
+					</tr>
+					<tr class="item_box">
+						<td><input type="checkbox" class="select_item" name="selected"><span class="cnt_num">1</span></td>
+						<td><img class="goods_img" src="img/knif.png" alt="knif"></td>
+						<td><span class="goods_title">Нож складной WENGER Evolution ,"Автобус" ,13 функций, 85 мм.WENGER</span></td>
+						<td>
+							<div class="calc_cell_inner">
+								<span class="goods_price rub">1200</span>
+								<span class="goods_cnt">5</span>
+								<span class="goods_sum rub">2400</span>
+							</div>
+						</td>
+					</tr>
+					<tr class="item_box">
+						<td><input type="checkbox" class="select_item" name="selected"><span class="cnt_num">2</span></td>
+						<td><img class="goods_img" src="img/bag.png" alt="bag"></td>
+						<td><span class="goods_title">Рюкзак WENGER «NEO»</span></td>
+						<td>
+							<div class="calc_cell_inner">
+								<span class="goods_price rub">5400</span>
+								<span class="goods_cnt">1</span>
+								<span class="goods_sum rub">2400</span>
+							</div>
+						</td>
+					</tr>
+					<tr class="item_box">
+						<td><input type="checkbox" class="select_item" name="selected"><span class="cnt_num">3</span></td>
+						<td><img class="goods_img" src="img/pen.png" alt="pen"></td>
+						<td><span class="goods_title">Перьевая ручка Waterman Hemisphere Essential, перо: нержавеющая сталь.</span></td>
+						<td class="calc_cell"> 
+							<div class="calc_cell_inner">
+								<span class="goods_price rub">1950</span>
+								<span class="goods_cnt">3</span>
+								<span class="goods_sum rub">2400</span>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<div class="horizontal_line"></div>
+				<div class="tmp_total_wrap">
+					<div class="tmp_total">
+						<div class="tmp_total_desc">Промежуточный итог по корзине:</div>
+						<div class="tmp_total_sum rub">194 740</div>
+					</div>
+					<div class="total_nds">
+						<div class="total_nds_desc">В том числе НДС:</div>
+						<div class="total_nds_sum rub">29 706</div>
+					</div>
+				</div>
+				<div class="total_wrap">
+					<div class="total_desc">Итого:</div>
+					<div class="total_sum rub">195 040</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup_edit" style="display:none;">
+		<div class="popup_title">Изменить количество</div>
+		<div class="popup_cnt_control">
+			<span class="popup_price">9 000</span>
+			<div class="popup_munus_item">-</div>
+			<input type="text" class="popup_cnt" value="3">
+			<div class="popup_plus_item">+</div>
+			<div class="popup_sum">6 343 345</div>
+		</div>
+		<div class="popup_control">
+			<div class="popup_save">Сохранить</div>
+			<div class="popup_cansel">Отменить</div>
+		</div>
+	</div>
+	
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
